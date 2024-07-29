@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "KAIST One Click Service",
+    "version": "1.0",
+    "description": "Extracts authentication code from Naver mail.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://mail.naver.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/icons8-color-16.png",
+            "32": "/images/icons8-color-32.png",
+            "48": "/images/icons8-color-48.png",
+            "128": "/images/icons8-color-128.png"
+        }
+    },
+    "icons": {
+        "16": "/images/icons8-color-16.png",
+        "32": "/images/icons8-color-32.png",
+        "48": "/images/icons8-color-48.png",
+        "128": "/images/icons8-color-128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
+  
